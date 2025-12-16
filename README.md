@@ -1,4 +1,4 @@
-# sqlite_web_ui
+# SQLite Web UI
 
 A simple **web-based UI for browsing and editing SQLite databases**.
 
