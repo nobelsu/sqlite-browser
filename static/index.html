@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SQLite Real-Time Viewer</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SQLite Real-Time Viewer</h1>
+    <div class="muted">DB: %DB_PATH%</div>
+
+    <div class="grid">
+      <aside class="panel">
+        <div class="side-header">
+          <strong>Tables</strong>
+          <button id="refreshTables">↻</button>
+        </div>
+        <div id="tablesList">Loading…</div>
+      </aside>
+
+      <main class="panel">
+        <div class="top-row">
+          <div>
+            <strong id="selectedTitle">Select a table</strong>
+            <div class="muted" id="status">Status: idle</div>
+          </div>
+          <div class="controls">
+            <label>Limit</label>
+            <input id="limit" type="number" value="200">
+            <input id="query" placeholder="search content">
+            <button id="refreshRows">Refresh</button>
+            <button id="togglePolling">Pause</button>
+          </div>
+        </div>
+
+        <div id="rowsContainer">
+          <table>
+            <thead>
+              <tr><th>id</th><th>content</th><th>created_at</th></tr>
+            </thead>
+            <tbody id="rowsBody"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <div class="muted">Polling interval: %REFRESH_MS% ms. Content preserves newlines and formatting.</div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
