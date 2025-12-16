@@ -23,11 +23,11 @@ A simple **web-based UI for browsing SQLite databases**.
    uv add -r requirements.txt
    ```
 
-3. Set up and adjust environment variables:
+3. Set up and adjust environment variables
 
     ```
-    SQLITE_DB=/path/to/example.db
-    REFRESH_INTERVAL=2 
+    SQLITE_DB = /path/to/example.db
+    REFRESH_INTERVAL = 2 
     ```
 
 3. Run the app
