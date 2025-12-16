@@ -1,20 +1,19 @@
-# SQLite Web UI
+# SQLite Browser
 
 A simple **web-based UI for browsing SQLite databases**.
 
 ## 🧰 Features
 
 - Browse SQLite database tables and schema
-- Run custom SQL queries
-- View and edit records in your browser
+- View records in your browser
 - Works with any local `.db` file
 
 ## 🚀 Quick Start
 
 1. Clone the repo  
    ```sh
-   git clone https://github.com/nobelsu/sqlite_web_ui.git
-   cd sqlite_web_ui
+   git clone https://github.com/nobelsu/sqlite-browser.git
+   cd sqlite-browser
     ```
 
 2. Install dependencies
